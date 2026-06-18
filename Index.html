@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fiat-Dz | وكالة بيع سيارات فيات</title>
+
+<title>Fiat-Dz</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -12,123 +15,176 @@
 <body>
 
 <header>
-    <h1>🚗 Fiat-Dz</h1>
-    <p>وكالة بيع سيارات فيات الجزائر</p>
+
+<h1>🚗 Fiat-Dz</h1>
+
+<p>وكالة بيع سيارات فيات الجزائر</p>
+
 </header>
 
 <div class="container">
 
-    <div class="car">
-        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="">
-        <h2>Fiat Panorama</h2>
-        <p class="price">3 490 000 DA</p>
-        <button onclick="openForm('Fiat Panorama')">طلب السيارة</button>
-    </div>
+<div class="card">
 
-    <div class="car">
-        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7" alt="">
-        <h2>Fiat Doblo</h2>
-        <p class="price">3 150 000 DA</p>
-        <button onclick="openForm('Fiat Doblo')">طلب السيارة</button>
-    </div>
+<img src="https://via.placeholder.com/400x250?text=Fiat+Panorama">
 
-    <div class="car">
-        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" alt="">
-        <h2>Fiat 500</h2>
-        <p class="price">2 550 000 DA</p>
-        <button onclick="openForm('Fiat 500')">طلب السيارة</button>
-    </div>
+<h2>Fiat Panorama</h2>
 
-    <div class="car">
-        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d" alt="">
-        <h2>Fiat Scudo</h2>
-        <p class="price">3 720 000 DA</p>
-        <button onclick="openForm('Fiat Scudo')">طلب السيارة</button>
-    </div>
+<p>3 490 000 DA</p>
+
+<button onclick="openForm('Fiat Panorama')">
+
+طلب السيارة
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://via.placeholder.com/400x250?text=Fiat+Doblo">
+
+<h2>Fiat Doblo</h2>
+
+<p>3 150 000 DA</p>
+
+<button onclick="openForm('Fiat Doblo')">
+
+طلب السيارة
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://via.placeholder.com/400x250?text=Fiat+500">
+
+<h2>Fiat 500</h2>
+
+<p>2 550 000 DA</p>
+
+<button onclick="openForm('Fiat 500')">
+
+طلب السيارة
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://via.placeholder.com/400x250?text=Fiat+Scudo">
+
+<h2>Fiat Scudo</h2>
+
+<p>3 720 000 DA</p>
+
+<button onclick="openForm('Fiat Scudo')">
+
+طلب السيارة
+
+</button>
+
+</div>
 
 </div>
 
 <div id="popup" class="popup">
 
-    <div class="box">
+<div class="popup-content">
 
-        <h2 id="carName"></h2>
+<h2 id="carTitle"></h2>
 
-        <input type="text" id="nom" placeholder="الاسم">
+<input id="firstname" type="text" placeholder="الاسم">
 
-        <input type="text" id="prenom" placeholder="اللقب">
+<input id="lastname" type="text" placeholder="اللقب">
 
-        <select id="wilaya">
-            <option value="">اختر الولاية</option>
-            <option>أدرار</option>
-            <option>الشلف</option>
-            <option>الأغواط</option>
-            <option>أم البواقي</option>
-            <option>باتنة</option>
-            <option>بجاية</option>
-            <option>بسكرة</option>
-            <option>بشار</option>
-            <option>البليدة</option>
-            <option>البويرة</option>
-            <option>تمنراست</option>
-            <option>تبسة</option>
-            <option>تلمسان</option>
-            <option>تيارت</option>
-            <option>تيزي وزو</option>
-            <option>الجزائر</option>
-            <option>الجلفة</option>
-            <option>جيجل</option>
-            <option>سطيف</option>
-            <option>سعيدة</option>
-            <option>سكيكدة</option>
-            <option>سيدي بلعباس</option>
-            <option>عنابة</option>
-            <option>قالمة</option>
-            <option>قسنطينة</option>
-            <option>المدية</option>
-            <option>مستغانم</option>
-            <option>المسيلة</option>
-            <option>معسكر</option>
-            <option>ورقلة</option>
-            <option>وهران</option>
-            <option>البيض</option>
-            <option>إليزي</option>
-            <option>برج بوعريريج</option>
-            <option>بومرداس</option>
-            <option>الطارف</option>
-            <option>تندوف</option>
-            <option>تيسمسيلت</option>
-            <option>الوادي</option>
-            <option>خنشلة</option>
-            <option>سوق أهراس</option>
-            <option>تيبازة</option>
-            <option>ميلة</option>
-            <option>عين الدفلى</option>
-            <option>النعامة</option>
-            <option>عين تموشنت</option>
-            <option>غرداية</option>
-            <option>غليزان</option>
-            <option>تيميمون</option>
-            <option>برج باجي مختار</option>
-            <option>أولاد جلال</option>
-            <option>بني عباس</option>
-            <option>عين صالح</option>
-            <option>عين قزام</option>
-            <option>تقرت</option>
-            <option>جانت</option>
-            <option>المغير</option>
-            <option>المنيعة</option>
-        </select>
+<select id="wilaya">
 
-        <input type="tel" id="phone" placeholder="رقم الهاتف">
+<option value="">اختر الولاية</option>
 
-        <button onclick="sendWhatsapp()">تسجيل الطلب</button>
+<option>أدرار</option>
+<option>الشلف</option>
+<option>الأغواط</option>
+<option>أم البواقي</option>
+<option>باتنة</option>
+<option>بجاية</option>
+<option>بسكرة</option>
+<option>بشار</option>
+<option>البليدة</option>
+<option>البويرة</option>
+<option>تمنراست</option>
+<option>تبسة</option>
+<option>تلمسان</option>
+<option>تيارت</option>
+<option>تيزي وزو</option>
+<option>الجزائر</option>
+<option>الجلفة</option>
+<option>جيجل</option>
+<option>سطيف</option>
+<option>سعيدة</option>
+<option>سكيكدة</option>
+<option>سيدي بلعباس</option>
+<option>عنابة</option>
+<option>قالمة</option>
+<option>قسنطينة</option>
+<option>المدية</option>
+<option>مستغانم</option>
+<option>المسيلة</option>
+<option>معسكر</option>
+<option>ورقلة</option>
+<option>وهران</option>
+<option>البيض</option>
+<option>إليزي</option>
+<option>برج بوعريريج</option>
+<option>بومرداس</option>
+<option>الطارف</option>
+<option>تندوف</option>
+<option>تيسمسيلت</option>
+<option>الوادي</option>
+<option>خنشلة</option>
+<option>سوق أهراس</option>
+<option>تيبازة</option>
+<option>ميلة</option>
+<option>عين الدفلى</option>
+<option>النعامة</option>
+<option>عين تموشنت</option>
+<option>غرداية</option>
+<option>غليزان</option>
+<option>تيميمون</option>
+<option>برج باجي مختار</option>
+<option>أولاد جلال</option>
+<option>بني عباس</option>
+<option>عين صالح</option>
+<option>عين قزام</option>
+<option>تقرت</option>
+<option>جانت</option>
+<option>المغير</option>
+<option>المنيعة</option>
 
-    </div>
+</select>
+
+<input id="phone" type="tel" placeholder="رقم الهاتف">
+
+<button onclick="sendWhatsapp()">
+
+تسجيل الطلب
+
+</button>
+
+<button onclick="closeForm()">
+
+إلغاء
+
+</button>
+
+</div>
 
 </div>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
