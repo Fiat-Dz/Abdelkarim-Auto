@@ -4,23 +4,29 @@ function openForm(car){
 
     selectedCar = car;
 
-    document.getElementById("carName").innerHTML = car;
+    document.getElementById("carTitle").innerHTML = car;
 
     document.getElementById("popup").style.display = "flex";
 
 }
 
+function closeForm(){
+
+    document.getElementById("popup").style.display = "none";
+
+}
+
 function sendWhatsapp(){
 
-    let nom = document.getElementById("nom").value;
+    let firstname = document.getElementById("firstname").value.trim();
 
-    let prenom = document.getElementById("prenom").value;
+    let lastname = document.getElementById("lastname").value.trim();
 
     let wilaya = document.getElementById("wilaya").value;
 
-    let phone = document.getElementById("phone").value;
+    let phone = document.getElementById("phone").value.trim();
 
-    if(nom=="" || prenom=="" || wilaya=="" || phone==""){
+    if(firstname=="" || lastname=="" || wilaya=="" || phone==""){
 
         alert("يرجى ملء جميع الخانات");
 
@@ -29,21 +35,21 @@ function sendWhatsapp(){
     }
 
     let message =
-`🚗 طلب سيارة جديد
+`🚗 طلب شراء سيارة
 
 السيارة : ${selectedCar}
 
-👤 الاسم : ${nom}
+👤 الاسم : ${firstname}
 
-👤 اللقب : ${prenom}
+👤 اللقب : ${lastname}
 
 📍 الولاية : ${wilaya}
 
 📞 رقم الهاتف : ${phone}`;
 
-    let url =
-"https://wa.me/213541707871?text="+encodeURIComponent(message);
+    let whatsapp =
+"https://wa.me/213541707871?text=" + encodeURIComponent(message);
 
-    window.open(url,"_blank");
+    window.open(whatsapp,"_blank");
 
 }
